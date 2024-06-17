@@ -8,6 +8,7 @@ base.env:
 
 start:
 	docker run \
+	-ti \
 	--env-file base.env \
 	-p 7860:7860 \
 	-v $(shell pwd):/gradio \
