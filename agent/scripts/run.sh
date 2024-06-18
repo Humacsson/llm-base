@@ -1,4 +1,5 @@
-litellm --model ollama/llama3 --api_base http://host.docker.internal:11434 &
+#! /bin/sh
+litellm --model ollama/llama3 --api_base http://host.docker.internal:11434 --debug &
 
 echo -n 'Waiting for litellm'
 # Use weget to check if the URL is up: 
